@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZhEBaLB1b6AcVbMrDiNpwR6KcEZSFPfbmTHR6uT33egW2zSG/UA4nJ6ZEx40fmcdLqIbMuejqdNNwj7XfuQgRw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marco\\OneDrive\\Área de Trabalho\\tech-test-backend-csharp\\GestaoProdutos\\GestaoProdutos\\GestaoProdutos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marco\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}
