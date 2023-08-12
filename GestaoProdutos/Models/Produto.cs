@@ -4,6 +4,8 @@ namespace GestaoProdutos.Models;
 
 public class Produto
 {
+    [Key]
+    [Required]
     public int Id { get; set; }
 
     [Required(ErrorMessage = "O nome do produto é obrigatório")]
@@ -19,6 +21,7 @@ public class Produto
     [Required(ErrorMessage = "O data do produto é obrigatório")]
     public int DataDeCriacao { get; set; }
 
+   
 
 
 }
