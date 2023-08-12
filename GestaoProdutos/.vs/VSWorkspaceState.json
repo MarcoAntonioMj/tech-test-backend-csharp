@@ -3,10 +3,12 @@
     "",
     "\\Controllers",
     "\\Data",
+    "\\Data\\Dtos",
+    "\\Migrations",
     "\\Models",
-    "\\obj",
+    "\\Profiles",
     "\\Properties"
   ],
-  "SelectedNode": "\\Models\\Produto.cs",
+  "SelectedNode": "\\Data\\Dtos\\CreateProdutoDto.cs",
   "PreviewInSolutionExplorer": false
 }

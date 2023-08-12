@@ -76,3 +76,5 @@ C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProduto
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\obj\Debug\net7.0\GestaoProdutos.pdb
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\obj\Debug\net7.0\GestaoProdutos.genruntimeconfig.cache
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\obj\Debug\net7.0\ref\GestaoProdutos.dll
+C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
