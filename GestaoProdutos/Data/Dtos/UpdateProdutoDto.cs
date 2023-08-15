@@ -2,7 +2,7 @@
 
 namespace GestaoProdutos.Data.Dtos;
 
-public class CreateProdutoDto
+public class UpdateProdutoDto
 {
     [Required(ErrorMessage = "O nome do produto é obrigatório")]
     public string Nome { get; set; }
@@ -17,4 +17,5 @@ public class CreateProdutoDto
     [Required(ErrorMessage = "A data do produto é obrigatória")]
     public int DataDeCriacao { get; set; }
 }
+
 
