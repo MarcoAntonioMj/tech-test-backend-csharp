@@ -10,6 +10,8 @@ namespace GestaoProdutos.Profiles
         {
             CreateMap<CreateProdutoDto, Produto>();
             CreateMap<UpdateProdutoDto, Produto>();
+            CreateMap<Produto, UpdateProdutoDto>();
+
         }
     }
 }

@@ -12,9 +12,13 @@ C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProduto
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\GestaoProdutos.runtimeconfig.json
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\GestaoProdutos.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\GestaoProdutos.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Humanizer.dll
+C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
@@ -37,6 +41,8 @@ C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProduto
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -76,5 +82,3 @@ C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProduto
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\obj\Debug\net7.0\GestaoProdutos.pdb
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\obj\Debug\net7.0\GestaoProdutos.genruntimeconfig.cache
 C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\obj\Debug\net7.0\ref\GestaoProdutos.dll
-C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\AutoMapper.dll
-C:\Users\marco\OneDrive\Área de Trabalho\tech-test-backend-csharp\GestaoProdutos\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
