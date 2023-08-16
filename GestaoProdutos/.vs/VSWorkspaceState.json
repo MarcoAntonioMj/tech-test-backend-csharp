@@ -4,11 +4,10 @@
     "\\Controllers",
     "\\Data",
     "\\Data\\Dtos",
-    "\\Migrations",
     "\\Models",
     "\\Profiles",
     "\\Properties"
   ],
-  "SelectedNode": "\\Models\\Produto.cs",
+  "SelectedNode": "\\Migrations",
   "PreviewInSolutionExplorer": false
 }
