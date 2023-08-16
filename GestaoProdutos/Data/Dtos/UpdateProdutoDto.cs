@@ -16,6 +16,8 @@ public class UpdateProdutoDto
 
     [Required(ErrorMessage = "A data do produto é obrigatória")]
     public int DataDeCriacao { get; set; }
+
+
 }
 
 

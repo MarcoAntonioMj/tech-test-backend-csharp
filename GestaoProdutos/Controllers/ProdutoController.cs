@@ -50,7 +50,10 @@ public class ProdutoController : Controller
     {
         var produto = _context.produtos.FirstOrDefault(produto => produto.Id == id);
         if (produto == null) return NotFound();
-        return Ok(produto);
+
+        var produtoDto = _mapper.Map<ProdutoDto>(produto); 
+
+        return Ok(produtoDto);
     }
 
     [HttpPut("{id}")]

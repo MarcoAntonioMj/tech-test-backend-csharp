@@ -21,7 +21,8 @@ public class Produto
     [Required(ErrorMessage = "O data do produto é obrigatório")]
     public int DataDeCriacao { get; set; }
 
-   
+    public int ValorTotal { get; set; }
+
 
 
 }
