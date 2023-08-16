@@ -86,4 +86,17 @@ public class ProdutoController : Controller
             return NoContent();
         
     }
+    [HttpDelete("{id}")]
+    public IActionResult ExcluirProduto(int id)
+    {
+        var produto = _context.produtos.FirstOrDefault(produto => produto.Id == id);
+        if (produto == null)
+        {
+            return NotFound();
+        }
+
+        _context.produtos.Remove(produto);
+        _context.SaveChanges();
+        return NoContent();
+    }
 }
