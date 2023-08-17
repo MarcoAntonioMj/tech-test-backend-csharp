@@ -5,9 +5,11 @@
     "\\Data",
     "\\Data\\Dtos",
     "\\Models",
+    "\\obj",
     "\\Profiles",
-    "\\Properties"
+    "\\Properties",
+    "\\Tests"
   ],
-  "SelectedNode": "\\Migrations",
+  "SelectedNode": "\\Tests\\ProdutoControllerTests.cs",
   "PreviewInSolutionExplorer": false
 }
