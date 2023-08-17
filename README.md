@@ -1,67 +1,128 @@
-# Prova Técnica - Desenvolvedor de Software Backend C#
+# Gestão de Produtos API - Documentação
 
-## Instruções
+## Descrição
 
-- A prova consiste na implementação de uma API em C# seguindo os requisitos e critérios estabelecidos abaixo.
-- Faça um fork privado do presente repositório e adicione o usuário "alexmontanha@mobilus.com.br" como contribuidor do repositório.
-- Utilize o formato MarkDown para formatar todas as informações que são relevantes para o projeto.
-- O candidato deve realizar as tarefas descritas na prova e garantir que o repositório com o texto contenha o código-fonte completo junto com um arquivo explicativo em Markdown descrevendo as soluções adotadas.
-- O candidato tem o prazo de 7 dias para finalizar.
-- Ao finalizar, o candidato deve enviar um e-mail recrutamento@mobilus.com.br com o assunto "Vaga Desenvolvedor - [seu nome]", informando que finalizou o teste.
-- Todas as alterações feitas após o envio do e-mail serão desconsideradas.
+Esta é uma API de gerenciamento de produtos que permite criar, atualizar, listar e excluir produtos. A API é construída em C# usando o framework ASP.NET Core e utiliza o Entity Framework Core para a persistência de dados. O AutoMapper é utilizado para mapear entre os modelos de dados e os DTOs (Data Transfer Objects). Abaixo estão os principais componentes da API:
 
+- **Controllers:** A API possui um controlador chamado `ProdutoController` que gerencia as operações CRUD (Create, Read, Update, Delete) relacionadas aos produtos.
 
-## Descrição do Projeto
+- **Data:** A pasta `Data` contém a classe `ProdutoContext`, que é uma classe de contexto do Entity Framework Core, responsável por se conectar ao banco de dados e mapear as entidades para tabelas.
 
-A empresa __Mobilus Tecnologia__ está em busca de um desenvolvedor de software altamente qualificado para implementar uma API em C#. A API deve oferecer um CRUD completo, conter regras de validação e campos calculados, e utilizar três repositórios distintos: Arquivo texto, Banco de dados SQL e Banco NoSQL.
+- **Data.Dtos:** Nesta pasta estão os objetos DTO (Data Transfer Objects) que são usados para receber e retornar dados da API sem expor os detalhes internos dos modelos de dados.
 
-## Requisitos Técnicos
+- **Models:** Os modelos de dados representam a estrutura dos produtos que serão armazenados no banco de dados.
 
-- Linguagem de Programação: C#
-- Desenvolvimento Backend
-- Bancos de Dados SQL
-- Padrões de Projeto
-- Princípios do SOLID
-- Testes Unitários usando MSTests
+- **Profiles:** Os perfis de mapeamento do AutoMapper são definidos nesta pasta para converter objetos entre os modelos de dados e os DTOs.
 
-## Tarefas
+- **Program.cs:** O arquivo de entrada do programa configura os serviços, o banco de dados, o AutoMapper e outras configurações da aplicação.
 
-1. Implemente uma API em C# que realize operações de CRUD (Create, Read, Update, Delete) completo para um recurso chamado "Produto". O "Produto" deve conter os seguintes atributos: Id (identificador único), Nome, Preço, Quantidade em Estoque, e Data de Criação. Os endpoints esperados são:
+## Endpoints
 
+### Criar um Produto
 
+Endpoint: `POST /api/produto`
 
-``` html
-   POST /api/produtos: Cria um novo produto.
-   GET /api/produtos: Retorna a lista de todos os produtos.
-   GET /api/produtos/{id}: Retorna os detalhes de um produto específico.
-   PUT /api/produtos/{id}: Atualiza os dados de um produto existente.
-   DELETE /api/produtos/{id}: Remove um produto do sistema.
+Cria um novo produto com base nos dados fornecidos.
+
+Parâmetros da Solicitação (JSON):
+```json
+{
+  "Nome": "Nome do Produto",
+  "Preco": 100,
+  "QuantidadeEmEstoque": 10,
+  "DataDeCriacao": "2023-08-17"
+}
 ```
+Resposta:
+- Status: 201 Created
+- Corpo: Detalhes do produto criado
+  
+###  Listar Produtos
+Endpoint: GET /api/produto
+Lista todos os produtos.
 
-2. Implemente uma regra de validação para o atributo "Preço" do produto. O preço não pode ser negativo, e o sistema deve retornar uma mensagem de erro apropriada em caso de tentativa de criação ou atualização de um produto com preço inválido.
+Parâmetros da Solicitação:
 
-3. Adicione um campo calculado ao produto chamado "Valor Total" que represente o valor total do produto em estoque (Preço x Quantidade em Estoque). Esse campo deve ser retornado na consulta de detalhes do produto.
+- skip (opcional): Número de produtos a pular (padrão: 0)
+- take (opcional): Número máximo de produtos a retornar (padrão: 15)
+  
+Resposta:
+- Status: 200 OK
+- Corpo: Lista de produtos
+  
+### Obter Produto por ID
+Endpoint: GET /api/produto/{id}
 
-4. Utilize três repositórios distintos para armazenar os dados dos produtos:
-   - 4.1) Repositório de Arquivo Texto: Os dados devem ser armazenados em um arquivo texto com formato adequado. Implemente as operações de leitura e escrita nesse repositório.
-   - 4.2) Repositório de Banco de Dados SQL: Utilize um banco de dados SQL de sua escolha (por exemplo, SQL Server, MySQL, PostgreSQL) para implementar as operações de persistência.
-   - 4.3) Repositório de Banco NoSQL: Utilize um banco de dados NoSQL de sua escolha (por exemplo, MongoDB, Cassandra, Couchbase) para implementar as operações de persistência.
+Obtém os detalhes de um produto com base no ID fornecido.
 
-## Critérios de Avaliação
+Parâmetros da Solicitação:
 
-- API implementada, rodando e com uma forma de acesso para teste em produção.
-- Implementação correta e funcional da API com todas as operações CRUD.
-- Correta aplicação da regra de validação para o atributo "Preço".
-- Cálculo correto do campo "Valor Total".
-- Implementação dos três repositórios distintos com sucesso na persistência dos dados.
-- Organização e clareza do código.
-- Utilização adequada dos princípios do SOLID.
-- Criação de testes unitários para as principais funcionalidades da API.
+- id: ID do produto a ser obtido
+Resposta:
 
-## Observações
+- Status: 200 OK
+- Corpo: Detalhes do produto
+  
+### Atualizar Produto
+Endpoint: PUT /api/produto/{id}
 
-- O candidato tem liberdade para escolher a estrutura do projeto, frameworks e bibliotecas adicionais que julgar adequados para a realização da prova.
-- É importante seguir as boas práticas de desenvolvimento e manter um código limpo e legível.
-- Inclua no arquivo explicativo em Markdown informações sobre como executar o projeto, incluindo a configuração dos bancos de dados (caso necessário) e a execução dos testes unitários.
+Atualiza os detalhes de um produto com base no ID fornecido.
 
-Boa prova e sucesso no desafio! Em caso de dúvidas, entre em contato pelo e-mail recrutamento@mobilus.com.br.
+Parâmetros da Solicitação (JSON):
+```json
+{
+  "Nome": "Novo Nome do Produto",
+  "Preco": 150,
+  "QuantidadeEmEstoque": 20,
+  "DataDeCriacao": "2023-08-17"
+}
+```
+Resposta:
+- Status: 204 No Content
+  
+### Atualizar Produto Parcialmente
+Endpoint: PATCH /api/produto/{id}
+
+Atualiza parcialmente os detalhes de um produto com base no ID fornecido.
+
+Parâmetros da Solicitação (JSON Patch):
+```json
+[
+  { "op": "replace", "path": "/Nome", "value": "Novo Nome do Produto" }
+]
+```
+Resposta:
+- Status: 204 No Content
+  
+### Excluir Produto
+Endpoint: DELETE /api/produto/{id}
+
+Exclui um produto com base no ID fornecido.
+
+Parâmetros da Solicitação:
+- id: ID do produto a ser excluído
+Resposta:
+- Status: 204 No Content
+
+### Configuração do Projeto
+## Banco de Dados
+A aplicação utiliza um banco de dados MySQL. Certifique-se de configurar a string de conexão no arquivo appsettings.json.
+
+## Execução
+Certifique-se de que você tem o SDK do .NET Core instalado. Para executar a aplicação, navegue até a pasta raiz do projeto no terminal e execute:
+```
+dotnet run
+```
+A aplicação será iniciada e estará disponível em https://localhost:5000.
+## Swagger
+Durante o desenvolvimento, você pode acessar a documentação interativa da API usando o Swagger. Vá para https://localhost:5000/swagger após iniciar a aplicação.
+## Considerações Finais
+Esta API oferece funcionalidades completas para o gerenciamento de produtos. Certifique-se de fornecer os dados corretos nos formatos esperados ao fazer solicitações para a API. Se houver alguma dúvida ou problema, consulte a documentação, o código-fonte ou entre em contato com a equipe de desenvolvimento.
+
+
+
+
+
+
+
+
